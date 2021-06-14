@@ -20,7 +20,7 @@ $postFields["url"]=$url;
 $header_json[0] = "Content-Type: application/json; charset=utf-8";
 
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, 'https://ssl.bing.com/webmaster/api.svc/pox/SubmitUrl?apikey='.$settings['bing-key']);
+curl_setopt($ch, CURLOPT_URL, 'https://ssl.bing.com/webmaster/api.svc/json/SubmitUrl?apikey='.$settings['bing-key']);
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS,(json_encode($postFields)));
 curl_setopt($ch, CURLOPT_HEADER, 1);
