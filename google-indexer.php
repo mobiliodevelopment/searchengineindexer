@@ -1,4 +1,4 @@
-<?
+<?php
 	
 $strJsonFileContents = file_get_contents("settings.json");
 $settings = json_decode($strJsonFileContents, true);
